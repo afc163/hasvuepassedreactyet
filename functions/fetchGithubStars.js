@@ -4,13 +4,13 @@ const axios = require('axios')
 // GraphQL query for Github API (https://developer.github.com/v4/)
 const query = `
   query {
-    react: repository(owner: "facebook", name: "react") {
+    react: repository(owner: "mui-org", name: "material-ui") {
       url
       stargazers {
         totalCount
       }
     }
-    vue: repository(owner: "vuejs", name: "vue") {
+    vue: repository(owner: "ant-design", name: "ant-design") {
       url
       stargazers {
         totalCount
@@ -20,7 +20,7 @@ const query = `
 `
 
 module.exports = (ctx, cb) => {
-  
+
   // Github access tokens
   const {
     GITHUB_TOKEN_1,
@@ -45,5 +45,4 @@ module.exports = (ctx, cb) => {
   github.post('graphql', { query }).then(res => {
     cb(null, res.data)
   })
-  
 }

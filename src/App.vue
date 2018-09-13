@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <github-corner/>
-    <p>Has Vue passed React yet?</p>
+    <p>Has Ant Design passed Material UI yet?</p>
     <template v-if="repos">
       <h1 v-if="!tie">{{ vueHasPassedReact ? 'YES' : 'NO' }}</h1>
       <h1 :class="{ pad : tie }" v-else>TIE!</h1>
@@ -262,7 +262,7 @@ p {
   from {
     transform: rotate(0deg);
   }
-  to { 
+  to {
     transform: rotate(-360deg);
   }
 }
