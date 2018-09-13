@@ -49,7 +49,7 @@ import axios from 'axios'
 import GithubCorner from './components/GithubCorner'
 import { VueIcon, ReactIcon, StarIcon } from './components/icons'
 
-const FUNCTIONS_ENDPOINT = 'https://wt-13e53fa81a1f88b8fd161c9e57aeaac4-0.sandbox.auth0-extend.com/fetchGithubStars'
+const FUNCTIONS_ENDPOINT = 'https://wt-afc163-gmail-com-0.sandbox.auth0-extend.com/functions'
 
 export default {
   name: 'App',
